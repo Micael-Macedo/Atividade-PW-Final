@@ -2,10 +2,11 @@
     --deal-introducao-bg: black;
     --deal-carousel-bg: purple;
     --deal-topics-bg: #be2edd;
+    --$carousel-control-color:
 }
 
 .deal-topicos{
-    margin-top: 5px;
+    margin: 15px 0;
     background-color: var(--deal-topics-bg);
     display: flex;
     align-items: center;
@@ -33,7 +34,9 @@
 #carouselExampleInterval p{
     justify-self: center;
 }
-
+#carouselExampleInterval svg{
+    fill: #be2edd;
+}
 #deal-tipos-servico{
     margin: 5px 15px;
     display: flex;
@@ -51,6 +54,18 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+.deal-section-cards{
+    display: flex;
+    align-content: center;
+}
 
+.deal-card-servicos-mais-solicitados{
+    text-align: center;
+    background-color: #be2edd;
+}
+
+.card-body{
+    background-color: #be2edd;
 }
 
