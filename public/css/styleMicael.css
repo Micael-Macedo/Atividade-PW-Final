@@ -1,9 +1,9 @@
 :root{
     --deal-introducao-bg: black;
-    --deal-carousel-bg: purple;
+    --deal-introducao-txt: #be2edd;
+    --deal-carousel-bg: #be2edd;
     --deal-topics-bg: #be2edd;
 }
-
 .deal-topicos{
     margin: 15px 0;
     background-color: var(--deal-topics-bg);
@@ -18,26 +18,40 @@
 }
 #deal-introducao{
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
-    height: 400px;
+    height: 500px;
     background-color: var(--deal-introducao-bg);
+}
+#deal-introducao h2{
+    color: var(--deal-introducao-txt);
+    position: absolute;
+}
+#deal-introducao img{
+
+    position: absolute;
+    width: 100%;
+    filter: brightness(20%);
+    z-index: 0;
+    height: 100%;
 }
 #carouselExampleInterval{
     display: flex;
     align-items: center;
-    padding-left: 150px;
+    padding-left: 200px;
     height: 100px;
+    background-color: var(--deal-carousel-bg);
+    font-size: 25px;
+    font-weight: 700 !important; 
     border: 4px solid black;
 }
 #carouselExampleInterval p{
     justify-self: center;
 }
-#carouselExampleInterval svg{
-    fill: #be2edd;
-}
+
 #deal-tipos-servico{
-    margin: 5px 15px;
+    margin: 5px 40px;
     display: flex;
     align-content: center;
     justify-content: space-between;
@@ -52,16 +66,16 @@
     max-width: 50px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
-}
-.deal-section-cards{
-    display: flex;
-    align-content: center;
 }
 
 .deal-card-servicos-mais-solicitados{
     text-align: center;
     background-color: #be2edd;
+}
+.card-img-top{
+    height: 220px;
 }
 
 .card-body{
