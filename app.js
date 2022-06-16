@@ -13,6 +13,10 @@ app.get('/', function( request, response){
     response.render('index');
 });
 
+app.get('/prestadores', function( request, response){
+    response.render('prestadores');
+});
+
 app.use(express.static('public'));
 app.listen(3000);
 
