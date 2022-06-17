@@ -1,12 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+<div class="deal-topicos">
+    <img src="img/services.svg"><h1>Serviços solicitados</h1>
+</div>
+<div class="container">
+    <div class ="col-sm-6 col-lg-4 col-xl-3 mb-3">
+        {{#each servicos}}
+        <div class="card cards-servicos" class="container">
+            <h5 class="card-header">Categoria</h5>
+            <div class="card-body">
+                <p class="card-title">Tipo do Serviço: {{nomeCategoria}}</p>
+                <p class="card-text">Endereço : {{Localidade}}</p>
+                <p class="card-text">Descrição do serviço: {{nomeServico}}</p>
+            </div>
+        </div>
+        {{/each}}
+        <div class="card cards-servicos" class="container">
+            <h5 class="card-header">Adicionar Novo Serviço</h5>
+            <div class="card-body">
+                <a class="btn btn-primary" href="cadastroServico">Cadastrar Serviço</a>
+            </div>
+        </div>
+    </div>
+</div>
