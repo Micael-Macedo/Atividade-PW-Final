@@ -8,7 +8,6 @@ section{
     margin-bottom: 20px;
 }
 .deal-topicos{
-    margin-bottom: 20px;
     background-color: var(--deal-topics-bg);
     display: flex;
     align-items: center;
@@ -24,11 +23,12 @@ section{
     position: relative;
     align-items: center;
     justify-content: center;
-    height: 800px;
-    background-color: var(--deal-introducao-bg);
+    height: 750px;
+    
 }
 #deal-introducao h2{
     position: absolute;
+    font-size: 50px;
     color: var(--deal-introducao-txt);
     z-index: 1;
 }
@@ -36,12 +36,12 @@ section{
     width: 100%;
     filter: brightness(20%);
     z-index: 0;
-    height: 800px;
+    height: 750px;
+    
 }
 #carouselExampleInterval{
     display: flex;
     align-items: center;
-    margin-top: 10px;
     padding-left: 200px;
     height: 100px;
     background-color: var(--deal-carousel-bg);
@@ -52,7 +52,9 @@ section{
 #carouselExampleInterval p{
     justify-self: center;
 }
-
+.container{
+    margin: 40px 0;
+}
 #deal-tipos-servico{
     margin: 5px 40px;
     display: flex;
