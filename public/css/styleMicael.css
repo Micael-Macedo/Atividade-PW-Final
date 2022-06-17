@@ -95,6 +95,14 @@ section{
     display: flex;
     justify-content: space-between;
 }
-.contato-dev a{
+.contato-dev a, a:hover{
+    text-decoration: unset;
     margin-right: 10px;
+    animation: 2s;
+}
+.contato-dev a{
+    color: white;
+}
+.contato-dev a:hover{
+    color: black;
 }
