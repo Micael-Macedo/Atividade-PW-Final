@@ -4,8 +4,11 @@
     --deal-carousel-bg: #be2edd;
     --deal-topics-bg: #be2edd;
 }
+section{
+    margin-bottom: 20px;
+}
 .deal-topicos{
-    margin: 15px 0;
+    margin-bottom: 20px;
     background-color: var(--deal-topics-bg);
     display: flex;
     align-items: center;
@@ -21,24 +24,24 @@
     position: relative;
     align-items: center;
     justify-content: center;
-    height: 500px;
+    height: 800px;
     background-color: var(--deal-introducao-bg);
 }
 #deal-introducao h2{
-    color: var(--deal-introducao-txt);
     position: absolute;
+    color: var(--deal-introducao-txt);
+    z-index: 1;
 }
 #deal-introducao img{
-
-    position: absolute;
     width: 100%;
     filter: brightness(20%);
     z-index: 0;
-    height: 100%;
+    height: 800px;
 }
 #carouselExampleInterval{
     display: flex;
     align-items: center;
+    margin-top: 10px;
     padding-left: 200px;
     height: 100px;
     background-color: var(--deal-carousel-bg);
