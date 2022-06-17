@@ -13,6 +13,18 @@ app.get('/', function( request, response){
     response.render('index');
 });
 
+app.get('/cadastroservico', function( request, response){
+    response.render('cadastroServico');
+});
+
+app.get('/prestadores', function( request, response){
+    response.render('prestadores');
+});
+
+app.get('/servicos', function( request, response){
+    response.render('servicos');
+});
+
 app.use(express.static('public'));
 app.listen(3000);
 
