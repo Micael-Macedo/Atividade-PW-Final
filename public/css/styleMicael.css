@@ -106,3 +106,28 @@ section{
 .contato-dev a:hover{
     color: black;
 }
+.cards-servicos{
+    border: 2px solid black !important;
+    border-radius: 5px;
+    display: flex;
+}
+.cards-servicos .card-header{
+    background-color: #be2edd !important;
+}
+
+.cards-servicos .card-body{
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke !important;
+} 
+
+.cards-servicos a{
+    background-color: black !important;
+    border: black !important;
+    transition: 0.2s;
+}
+
+.cards-servicos a:hover{
+    background-color:  #be2edd!important;
+    color: black;
+}
