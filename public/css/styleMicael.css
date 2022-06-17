@@ -4,6 +4,9 @@
     --deal-carousel-bg: #be2edd;
     --deal-topics-bg: #be2edd;
 }
+nav a:hover{
+    color: #be2edd !important;
+}
 section{
     margin-bottom: 20px;
 }
