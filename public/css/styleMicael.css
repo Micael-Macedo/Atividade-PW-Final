@@ -1,11 +1,11 @@
 :root{
     --deal-introducao-bg: black;
-    --deal-introducao-txt: #be2edd;
-    --deal-carousel-bg: #be2edd;
-    --deal-topics-bg: #be2edd;
+    --deal-introducao-txt: #F25AFE;
+    --deal-carousel-bg: #F25AFE;
+    --deal-topics-bg: #F25AFE;
 }
 nav a:hover{
-    color: #be2edd !important;
+    color: #F25AFE !important;
 }
 section{
     margin-bottom: 20px;
@@ -81,14 +81,14 @@ section{
 
 .deal-card-servicos-mais-solicitados{
     text-align: center;
-    background-color: #be2edd;
+    background-color: #F25AFE;
 }
 .card-img-top{
     height: 220px;
 }
 
 .card-body{
-    background-color: #be2edd;
+    background-color: #F25AFE;
 }
 
 #Contatos img{
@@ -116,7 +116,7 @@ section{
     display: flex;
 }
 .cards-servicos .card-header{
-    background-color: #be2edd !important;
+    background-color: #F25AFE !important;
 }
 
 .cards-servicos .card-body{
@@ -132,6 +132,6 @@ section{
 }
 
 .cards-servicos a:hover{
-    background-color:  #be2edd!important;
+    background-color:  #F25AFE!important;
     color: black;
 }
