@@ -17,8 +17,8 @@ app.use(bp.json());
 var mysqlConnection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'Azsxdc55',
-    database: 'deal'
+    password: '1234',
+    database: 'projetodeal'
 });
 
 app.get('/', function( req, res){
