@@ -1,0 +1,27 @@
+<div class="deal-topicos">
+    <img src="img/services.svg"><h1>Cadastrar Serviços</h1>
+</div>
+<form action="cadastroServico" method="post" class="container">
+    <div class="mb-3">
+        <label for="txtLocalidade" class="form-label">Localidade</label>
+        <input type="text" class="form-control" id="txtLocalidade" name="localidade">
+    </div>
+    <div class="mb-3">
+        <label for="txtCategoria" class="form-label" >Categoria</label>
+        <select class="form-select" name="categoria" >
+            <option selected>--</option>
+            <option value ="eletrica">Elétrica</option>
+            <option name= "hidraulica">Hidráulica</option>
+            <option name="carreto">Carreto</option>
+            <option name= "mecanica">Mecânica</option>
+            <option name="marcenaria" >Marcenaria</option>
+            <option name="pintura">Pintura</option>
+            <option name="manutencao_computador">Manutenção Computador</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="txtServico" class="form-label" >Descreva o serviço de forma breve</label>
+        <input type="text" class="form-control" id="txtServico" name="servico">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

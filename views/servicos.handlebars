@@ -1,0 +1,28 @@
+<div class="deal-topicos">
+    <img src="img/services.svg"><h1>Serviços solicitados</h1>
+</div>
+<div class="container">
+    <div class="row">
+        {{#each servicos}}
+        <div class ="col col-sm-6 col-lg-4 col-xl-3 mb-3">
+            <div class="card cards-servicos" class="container">
+                <h5 class="card-header"><b>Tipo do Serviço: </b> {{categoria}}</h5> 
+                    <div class="card-body-service">
+                        <p class="card-text inline"><b>Endereço: </b></p>
+                        <p class="card-text inline">{{localidade}}</p>
+                        <p class="card-text inline"><b>Descrição do serviço: </b></p>
+                        <p class="card-text inline">{{servico}}</p>
+                    </div>
+            </div>
+        </div>
+        {{/each}}
+        <div class ="col col-sm-6 col-lg-4 col-xl-3 mb-3">
+            <div class="card cards-servicos" class="container">
+                <h5 class="card-header">Adicionar Novo Serviço</h5>
+                <div class="card-body-service">
+                    <a class="btn btn-primary" href="cadastroServico">Cadastrar Serviço</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

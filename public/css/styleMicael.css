@@ -1,11 +1,16 @@
 :root{
     --deal-introducao-bg: black;
-    --deal-introducao-txt: #be2edd;
-    --deal-carousel-bg: #be2edd;
-    --deal-topics-bg: #be2edd;
+    --deal-introducao-txt: #F25AFE;
+    --deal-carousel-bg: #F25AFE;
+    --deal-topics-bg: #F25AFE;
+}
+nav a:hover{
+    color: #F25AFE !important;
+}
+section{
+    margin-bottom: 20px;
 }
 .deal-topicos{
-    margin: 15px 0;
     background-color: var(--deal-topics-bg);
     display: flex;
     align-items: center;
@@ -21,20 +26,21 @@
     position: relative;
     align-items: center;
     justify-content: center;
-    height: 500px;
-    background-color: var(--deal-introducao-bg);
+    height: 750px;
+    
 }
 #deal-introducao h2{
-    color: var(--deal-introducao-txt);
     position: absolute;
+    font-size: 50px;
+    color: var(--deal-introducao-txt);
+    z-index: 1;
 }
 #deal-introducao img{
-
-    position: absolute;
     width: 100%;
-    filter: brightness(20%);
+    filter: brightness(80%);
     z-index: 0;
-    height: 100%;
+    height: 750px;
+    
 }
 #carouselExampleInterval{
     display: flex;
@@ -49,9 +55,12 @@
 #carouselExampleInterval p{
     justify-self: center;
 }
-
+.container{
+    margin: 40px 0;
+}
 #deal-tipos-servico{
-    margin: 5px 40px;
+    margin: 5px 20px;
+    margin-bottom: 20px;
     display: flex;
     align-content: center;
     justify-content: space-between;
@@ -72,13 +81,80 @@
 
 .deal-card-servicos-mais-solicitados{
     text-align: center;
-    background-color: #be2edd;
+    background-color: #F25AFE;
 }
 .card-img-top{
     height: 220px;
 }
-
-.card-body{
-    background-color: #be2edd;
+.card-body-service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 20px;
+}
+.card-service-content{
+    display: inline
+}
+.card-service-content p{
+    display: flex;
+    display: inline;
+}
+.inline{
+    display: flex;
+}
+.contato-dev{
+    padding-left: 20px;
+}
+.contato-dev a, a:hover{
+    font-size: 20px ;
+    text-decoration: unset !important;
+    margin-right: 10px;
+    animation: 2s;
+}
+.contato-dev a{
+    color: white;
+}
+.contato-dev a:hover{
+    color: black;
+}
+.cards-servicos{
+    border: 2px solid black !important;
+    border-radius: 5px;
+    display: flex;
+}
+.cards-servicos .card-header{
+    background-color: #F25AFE !important;
 }
 
+.cards-servicos .card-body{
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke !important;
+} 
+
+.cards-servicos a{
+    background-color: black !important;
+    border: black !important;
+    transition: 0.2s;
+}
+
+.cards-servicos a:hover{
+    background-color:  #F25AFE!important;
+    color: black;
+}
+
+.card-body-footer{
+    background-color: #F25AFE;
+}
+.card-body-footer img{  
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.card-body-footer b{
+    font-size: 30px;
+}
+.footer-contact{
+    display: flex;
+    align-items: center;
+}
