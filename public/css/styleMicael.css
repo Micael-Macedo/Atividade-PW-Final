@@ -86,18 +86,25 @@ section{
 .card-img-top{
     height: 220px;
 }
-
-.card-body{
-    background-color: #F25AFE;
+.card-body-service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 20px;
 }
-
+.card-service-content{
+    display: inline
+}
+.card-service-content p{
+    display: flex;
+    display: inline;
+}
 #Contatos img{
     width: 20px;
     height: 20px;
 }
 .inline{
     display: flex;
-    justify-content: space-between;
 }
 .contato-dev a, a:hover{
     text-decoration: unset;
@@ -134,4 +141,8 @@ section{
 .cards-servicos a:hover{
     background-color:  #F25AFE!important;
     color: black;
+}
+
+.card-body-footer{
+    background-color: #F25AFE;
 }
