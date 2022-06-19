@@ -2,6 +2,7 @@ const { response } = require('express');
 var express = require('express');
 var {engine} = require('express-handlebars');
 var bp = require('body-parser');
+var mysql = require('mysql2');
 
 var app = express();
 var servicos = [];
@@ -12,6 +13,13 @@ app.set('views', './views');
 
 app.use(bp.urlencoded({extend: false}))
 app.use(bp.json());
+
+var mysqlConnection = mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password: 'Azsxdc55',
+    database: 'deal'
+});
 
 app.get('/', function( req, res){
     res.render('index');
@@ -26,23 +34,28 @@ app.get('/prestadores', function( req, res){
 });
 
 app.get('/servicos', function( req, res){
-    res.render('servicos', {servicos});
+    sql = 'SELECT * FROM servicos';
+    mysqlConnection.query(sql, function(err, resultSet, fields){
+        if(err){
+            console.log('Erro ao consultar os dados no banco: ',err);
+        }else{
+            res.render('servicos', {servicos:resultSet});
+        }
+    })
 });
 
 app.post('/cadastroServico', function(req,res){
     localidade = req.body.localidade;
-    nomeCategoria = req.body.nomeCategoria;
-    nomeServico = req.body.nomeServico;
-
-    console.log(localidade);
-    console.log(nomeCategoria);
-    console.log(nomeServico)
-    servico = {
-        "localidade": localidade,
-        "nomeCategoria": nomeCategoria,
-        "nomeServico": nomeServico};
+    categoria = req.body.categoria;
+    servico = req.body.servico;
+    values = [[localidade, categoria, servico]]
     servicos.push(servico);
-    res.redirect('/servicos');
+    sql = 'INSERT INTO servicos (localidade, categoria, servico) VALUES ?';
+    mysqlConnection.query(sql, [values], function (err, result){
+        if (err) throw err;
+        console.log("Linhas modificadas no banco: ", result.affectedRows) ;
+    })
+    res.redirect('servicos');
 })
 
 app.use(express.static('public'));
