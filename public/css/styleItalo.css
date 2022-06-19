@@ -1,0 +1,23 @@
+/* :root{
+    --deal-introducao-bg: black;
+    --deal-introducao-txt: #be2edd;
+    --deal-carousel-bg: #be2edd;
+    --deal-topics-bg: #be2edd;
+} */
+
+.deal-titulo{
+    margin: 15px 0;
+    background-color: #be2edd;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+}
+
+.card-imgs{
+    height:250px;
+    width: 420px;
+}
+
+.card-body{
+    background-color: #be2edd;
+}
