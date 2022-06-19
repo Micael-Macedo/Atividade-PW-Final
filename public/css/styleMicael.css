@@ -99,15 +99,15 @@ section{
     display: flex;
     display: inline;
 }
-#Contatos img{
-    width: 20px;
-    height: 20px;
-}
 .inline{
     display: flex;
 }
+.contato-dev{
+    padding-left: 20px;
+}
 .contato-dev a, a:hover{
-    text-decoration: unset;
+    font-size: 20px ;
+    text-decoration: unset !important;
     margin-right: 10px;
     animation: 2s;
 }
@@ -145,4 +145,16 @@ section{
 
 .card-body-footer{
     background-color: #F25AFE;
+}
+.card-body-footer img{  
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.card-body-footer b{
+    font-size: 30px;
+}
+.footer-contact{
+    display: flex;
+    align-items: center;
 }
