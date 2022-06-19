@@ -14,8 +14,8 @@
 }
 
 .card-imgs{
-    height:250px;
-    width: 420px;
+    max-height:250px;
+    max-width: 420px;
 }
 
 .card-body{
