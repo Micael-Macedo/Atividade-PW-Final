@@ -4,24 +4,26 @@
 <form action="cadastroServico" method="post" class="container">
     <div class="mb-3">
         <label for="txtLocalidade" class="form-label">Localidade</label>
-        <input type="text" class="form-control" id="txtLocalidade" name="localidade">
+        <input type="text" class="form-control" id="txtLocalidade" name="localidade" required>
     </div>
     <div class="mb-3">
         <label for="txtCategoria" class="form-label" >Categoria</label>
-        <select class="form-select" name="categoria" >
+        <select class="form-select" name="categoria" id="categoriaServiço" onchange="teste(this);" required>
             <option selected>--</option>
-            <option value ="eletrica">Elétrica</option>
-            <option name= "hidraulica">Hidráulica</option>
+            <option name="eletrica">Elétrica</option>
+            <option name="hidraulica">Hidráulica</option>
             <option name="carreto">Carreto</option>
-            <option name= "mecanica">Mecânica</option>
-            <option name="marcenaria" >Marcenaria</option>
+            <option name="mecanica">Mecânica</option>
+            <option name="marcenaria">Marcenaria</option>
             <option name="pintura">Pintura</option>
             <option name="manutencao_computador">Manutenção Computador</option>
         </select>
     </div>
     <div class="mb-3">
         <label for="txtServico" class="form-label" >Descreva o serviço de forma breve</label>
-        <input type="text" class="form-control" id="txtServico" name="servico">
+        <input type="text" class="form-control" id="txtServico" name="servico" required>
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <div class="btnSubmit">
+        <button type="submit" class="btn btn-primary form-submit">Cadastrar Serviço</button>
+    </div>
 </form>
