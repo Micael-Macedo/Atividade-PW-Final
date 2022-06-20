@@ -6,7 +6,14 @@ function teste(servicoSelecionado){
         document.getElementById('Mecânica').style.display = "none";
         document.getElementById('Carreto').style.display = "none";
         document.getElementById('Pintura').style.display = "none";
-        document.getElementById('Marcenaria').style.display = "none"; 
+        document.getElementById('Marcenaria').style.display = "none";
+        document.getElementById('1').hidden = true;
+        document.getElementById('2').hidden = true; 
+        document.getElementById('3').hidden = true;  
+        document.getElementById('4').hidden = true; 
+        document.getElementById('5').hidden = true; 
+        document.getElementById('6').hidden = true; 
+
     }
     if(opForm == "Elétrica"){
         document.getElementById('Elétrica').style.display = "flex"; 
@@ -15,6 +22,13 @@ function teste(servicoSelecionado){
         document.getElementById('Carreto').style.display = "none";
         document.getElementById('Pintura').style.display = "none";
         document.getElementById('Marcenaria').style.display = "none"; 
+        document.getElementById('1').hidden = false;
+        document.getElementById('2').hidden = true; 
+        document.getElementById('3').hidden = true;  
+        document.getElementById('4').hidden = true; 
+        document.getElementById('5').hidden = true; 
+        document.getElementById('6').hidden = true; 
+        //Joao
     }
     if(opForm == "Hidráulica"){
         document.getElementById('Elétrica').style.display = "none"; 
@@ -23,6 +37,13 @@ function teste(servicoSelecionado){
         document.getElementById('Carreto').style.display = "none";
         document.getElementById('Pintura').style.display = "none";
         document.getElementById('Marcenaria').style.display = "none"; 
+        document.getElementById('1').hidden = true;
+        document.getElementById('2').hidden = false; 
+        document.getElementById('3').hidden = true;  
+        document.getElementById('4').hidden = true; 
+        document.getElementById('5').hidden = true; 
+        document.getElementById('6').hidden = true; 
+        //Mario
     }
     if(opForm == "Mecânica"){
         document.getElementById('Elétrica').style.display = "none"; 
@@ -31,6 +52,13 @@ function teste(servicoSelecionado){
         document.getElementById('Carreto').style.display = "none";
         document.getElementById('Pintura').style.display = "none";
         document.getElementById('Marcenaria').style.display = "none";
+        document.getElementById('1').hidden = true;
+        document.getElementById('2').hidden = true; 
+        document.getElementById('3').hidden = false;  
+        document.getElementById('4').hidden = true; 
+        document.getElementById('5').hidden = true; 
+        document.getElementById('6').hidden = true;
+        //Jailson
     }
     if(opForm == "Carreto"){
         document.getElementById('Elétrica').style.display = "none"; 
@@ -39,6 +67,13 @@ function teste(servicoSelecionado){
         document.getElementById('Carreto').style.display = "flex";
         document.getElementById('Pintura').style.display = "none";
         document.getElementById('Marcenaria').style.display = "none";
+        document.getElementById('1').hidden = true;
+        document.getElementById('2').hidden = true; 
+        document.getElementById('3').hidden = true;  
+        document.getElementById('4').hidden = false; 
+        document.getElementById('5').hidden = true; 
+        document.getElementById('6').hidden = true;
+        //Reinaldo
     }
     if(opForm == "Pintura"){
         document.getElementById('Elétrica').style.display = "none"; 
@@ -47,6 +82,13 @@ function teste(servicoSelecionado){
         document.getElementById('Carreto').style.display = "none";
         document.getElementById('Pintura').style.display = "flex";
         document.getElementById('Marcenaria').style.display = "none";
+        document.getElementById('1').hidden = true;
+        document.getElementById('2').hidden = true; 
+        document.getElementById('3').hidden = true;  
+        document.getElementById('4').hidden = true; 
+        document.getElementById('5').hidden = false; 
+        document.getElementById('6').hidden = true;
+        //joana
     }
     if(opForm == "Marcenaria"){
         document.getElementById('Elétrica').style.display = "none"; 
@@ -55,6 +97,13 @@ function teste(servicoSelecionado){
         document.getElementById('Carreto').style.display = "none";
         document.getElementById('Pintura').style.display = "none";
         document.getElementById('Marcenaria').style.display = "flex";
+        document.getElementById('1').hidden = true;
+        document.getElementById('2').hidden = true; 
+        document.getElementById('3').hidden = true;  
+        document.getElementById('4').hidden = true; 
+        document.getElementById('5').hidden = true; 
+        document.getElementById('6').hidden = false;
+        //Adriano
     } 
 }
 function habilitarBotão(OpP){
@@ -65,8 +114,10 @@ function habilitarBotão(OpP){
         document.getElementById('btnSubmit').disabled = true;
     } 
 }
-function cadastroServico(){
-
-    window.alert("Serviço cadastrado com sucesso")
+function cadastroServico(local, desc){
+    if(local.value != "" && desc.value != ""){
+        window.alert("Serviço cadastrado com sucesso");
+    }
+    
 }
 
