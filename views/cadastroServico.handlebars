@@ -136,11 +136,16 @@
     </div>
     <div class="mb-3">
         <label for="selectPrestador" class="form-label" >Selecione o prestador</label>
-        <select class="form-select" name="prestador" id="prestador">
-            <option value=""></option>
+        <select class="form-select" name="prestador" id="prestador" required onchange="habilitarBotão(this)">
+            <option selected>--</option>
+            <option name="João da Silva" id="1" hidden>João da Silva</option>
+            <option name="Mario Teles" id="2" hidden>Mario Teles</option>
+            <option name="Jailson Mendes" id="3" hidden>Jailson Mendes</option>
+            <option name="Reinaldo Almeida" id="4" hidden>Reinaldo Almeida</option>
+            <option name="Joana Mendonça" id="5" hidden>Joana Mendonça</option>
+            <option name="Adriano Gonçalves" id="6" hidden>Adriano Gonçalves</option>
         </select>
     </div>
-    <div class="btnSubmit">
-        <button type="submit" class="btn btn-primary form-submit">Cadastrar Serviço</button>
-    </div>
+    <button type="submit" class="btn btn-primary form-submit" id="btnSubmit" onclick="cadastroServico('txtLocalidade', txtServico)" disabled>Cadastrar Serviço</button>
+    
 </form>
