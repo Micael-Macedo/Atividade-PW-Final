@@ -1,6 +1,6 @@
 function teste(servicoSelecionado){
     opForm = servicoSelecionado.value;
-    if(opForm == "--"){
+    if(opForm == "--" || opForm == "Manutenção Computador"){
         document.getElementById('Elétrica').style.display = "none"; 
         document.getElementById('Hidráulica').style.display = "none";
         document.getElementById('Mecânica').style.display = "none";
@@ -55,6 +55,18 @@ function teste(servicoSelecionado){
         document.getElementById('Carreto').style.display = "none";
         document.getElementById('Pintura').style.display = "none";
         document.getElementById('Marcenaria').style.display = "flex";
-    }
-    
+    } 
 }
+function habilitarBotão(OpP){
+    if(OpP.value != "--"){
+        document.getElementById('btnSubmit').disabled = false;
+    }
+    if(OpP.value == "--"){
+        document.getElementById('btnSubmit').disabled = true;
+    } 
+}
+function cadastroServico(){
+
+    window.alert("Serviço cadastrado com sucesso")
+}
+
