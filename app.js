@@ -48,9 +48,10 @@ app.post('/cadastroServico', function(req,res){
     localidade = req.body.localidade;
     categoria = req.body.categoria;
     servico = req.body.servico;
-    values = [[localidade, categoria, servico]]
+    prestador = req.body.prestador;
+    values = [[localidade, categoria, servico, prestador]]
     servicos.push(servico);
-    sql = 'INSERT INTO servicos (localidade, categoria, servico) VALUES ?';
+    sql = 'INSERT INTO servicos (localidade, categoria, servico, prestador) VALUES ?';
     mysqlConnection.query(sql, [values], function (err, result){
         if (err) throw err;
         console.log("Linhas modificadas no banco: ", result.affectedRows) ;
