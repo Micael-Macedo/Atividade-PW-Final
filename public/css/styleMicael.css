@@ -86,18 +86,19 @@ section{
 .card-img-top{
     height: 220px;
 }
-.cards-servicos{
-    height: 200px !important;
-}
+
 .card-body-service{
     display: flex;
-    align-content: center;
+    align-items: center;
     flex-direction: column;
-    justify-content: center;
-    padding: 10px 20px;
+    text-align: justify;
+    font-size: 23px !important;
+    height: 300px !important;
+    padding: 3px 20px;
 }
+
 .card-body-service a{
-    margin-top: 50px;
+    margin-top: 120px;
 }
 .card-service-content{
     display: inline
