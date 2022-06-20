@@ -6,21 +6,22 @@
         <div class ="col col-sm-6 col-lg-4 col-xl-3 mb-3">
             <div class="card cards-servicos" class="container">
                 <h5 class="card-header">Adicionar Novo Serviço</h5>
-                <div class="card-body-service">
-                    <a class="btn btn-primary" href="cadastroServico">Cadastrar Serviço</a>
+                <div class="card-body">
+                    <div class="card-body-service">
+                        <a class="btn btn-primary" href="cadastroServico">Cadastrar Serviço</a>
+                    </div>
                 </div>
             </div>
         </div>
         {{#each servicos}}
         <div class ="col col-sm-6 col-lg-4 col-xl-3 mb-3">
-            <div class="card cards-servicos" class="container">
-                <h5 class="card-header"><b>Tipo do Serviço: </b> {{categoria}}</h5> 
+            <div class="card cards-servicos" style="width: 20rem;">
+            <h5 class="card-header">Serviço: {{categoria}}</h5>
+                <div class="card-body">
                     <div class="card-body-service">
-                        <p class="card-text inline"><b>Endereço: </b></p>
-                        <p class="card-text inline">{{localidade}}</p>
-                        <p class="card-text inline"><b>Descrição do serviço: </b></p>
-                        <p class="card-text inline">{{servico}}</p>
+                        <p class="card-text"><b>Localização: </b><br>{{localidade}}<br><b>Descrição: </b> <br>{{servico}}<br><b>Prestador Solicitado: </b> <br>{{prestador}}</p>
                     </div>
+                </div>
             </div>
         </div>
         {{/each}}
